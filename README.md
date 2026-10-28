@@ -98,11 +98,14 @@ The main concepts include:
 - Filtering records by date
 - Calculating sales totals and inventory balances
 
-## Running the Project
 
-You can explore this project using Microsoft SQL Server Management Studio (SSMS).
+## Data Analysis Process
 
-**Step 1 — Create a database**
+### Step 1 — Understand the Data
+Examine the Books, Customers, and Orders datasets to understand their columns, data types, and relationships.
+
+### Step 2 — Create a Database
+Create a database in Microsoft SQL Server to store and manage the bookstore data.
 
 ```sql
 CREATE DATABASE DB_Books;
@@ -112,19 +115,31 @@ USE DB_Books;
 GO
 ```
 
-**Step 2 — Load the datasets**
+### Step 3 — Create the Required Tables
+Create the Books, Customers, and Orders tables with appropriate columns, data types, primary keys, and foreign keys.
 
-Import the relevant CSV files into SQL Server and create or configure the required tables.
+### Step 4 — Import the Data
+Import the relevant CSV files into SQL Server and load the data into the corresponding tables.
 
-**Step 3 — Verify the database structure**
+### Step 5 — Clean the Data
+Identify and handle missing values, duplicate records, incorrect data types, and inconsistent data to improve data quality.
 
-Check that the tables and columns match the names used in your SQL queries. Confirm that the customer and book identifiers connect correctly to the Orders table.
+### Step 6 — Explore the Data
+Use `SELECT`, `WHERE`, and `ORDER BY` to explore book details, customer information, and order records.
 
-**Step 4 — Execute the queries**
+### Step 7 — Analyze Sales
+Use aggregate functions such as `SUM()`, `COUNT()`, and `AVG()` to calculate sales revenue, order counts, and average book prices.
 
-Run the SQL statements to explore the data, calculate sales metrics, investigate customer behaviour, and evaluate inventory.
+### Step 8 — Analyze Customer Behaviour
+Use `JOIN` and `GROUP BY` to analyze customer orders, identify frequent customers, and understand purchasing patterns.
 
-*Important: The database creation statement only creates the database. The tables and their data must be imported or created separately.*
+### Step 9 — Analyze Books and Inventory
+Analyze book genres, prices, and stock levels to identify popular categories and books that may require restocking.
+
+### Step 10 — Generate Insights
+Summarize the analysis results to identify sales trends, customer purchasing patterns, popular books, and inventory insights.
+
+
 
 ## Key Learnings
 
